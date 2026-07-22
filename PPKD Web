@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    /* Ukuran Mobile */
+    @media (max-width: 600px) {
+      .address h1 {
+        font-size: 15px;
+      }
+      .address p {
+        font-size: 10px;
+      }
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container bg-white shadow-sm">
+    <div class="row py-2 text-center align-items-center">
+      <div class="col-2">
+        <img class="img-fluid rounded-circle" src="image/ppkd.jpg" width="118" alt="">
+      </div>
+      <div class="col-8 address">
+        <h2 class="fw-bold">Pusat Pelatihan Kerja Daerah Jakarta Pusat</h2>
+        <p class="text-muted">Jl. Karet Pasar Baru Barat, Karet Tengsin, Tanah Abang District, Central Jakarta City, Special Capital Region of Jakarta
+        10250</p>
+      </div>
+      <div class="col-2">
+        <img class="img-fluid" src="image/logo dki.jpg" width="118" alt="">
+      </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary bg-opacity-100 rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-light" href="#"><i class="bi bi-buildings-fill"></i>PPKD Jakarta Pusat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Running Text -->
+  <marquee class="text-primary text-opacity-75 fw-bold" behavior="scroll" direction="left">
+    Selamat Datang di PPKD Jakarta Pusat 
+  </marquee>
+  <!-- Carousel & Card -->
+   <div class="container">
+   <div class="row">
+    <div class="col-md-8">
+      <!-- Carousel -->
+      <div id="carouselExampleDark" class="carousel carousel-light slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="image/kelas.jpg" class="d-block w-100 object-fit-cover" height="360" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>BNSP Certification Exam</h5>
+              <p>A free certification program is available</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="image/upacara.jpg" class="d-block w-100 object-fit-cover" height="360" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Participant Registration</h5>
+              <p>New Student Admission Process in 2026</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/sertifikat.jpg" class="d-block w-100 object-fit-cover" height="360" alt="">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>BNSP Certificate</h5>
+              <p>Participants undergo certification testing by an LSP (Professional Certification Institution).</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+    <div class="col-md-4">
+      <!--Card-->
+      <div class="card" style="width: 20rem;">
+        <h5 class="card-header text-primary fw-bold">Berita Terbaru :</h5>
+        <img src="image/bola.jpg" class="object-fit-cover w-100 p-1 rounded" height="220" alt="">
+        <div class="card-body">
+          <h4 class="card-title text-dark fw-bold">Piala Dunia 2026</h4>
+          <p class="card-text text-truncate">The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by
+          the senior men's national teams
+          </p>
+        </div>
+      </div>
+  </div>
+    </div>
+    <h3 class="fw-bold fs-5 mt-3 text-primary text-opacity-75">Berita Hari Ini :</h3>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="w-100 w-auto object-fit-cover img-fluid rounded my-2" src="image/messi.jpg" alt="">
+      </div>
+      <div class="col-md-8 d-flex border-bottom align-items-center">
+        <a href="#" class="fs-5 text-decoration-none fw-semibold text-dark text-opacity-75"> Messi after Argentina's World Cup failure: The pain is incredible
+          <span class="text-secondary d-block mt-2 fs-6">10 menit yang lalu</span>
+          <h6 class="text-dark fs-6 fw-light">Jakarta, CNN Indonesia --Argentina captain Lionel Messi has revealed that failing to win the 2026 World Cup left a huge
+          hole in his heart.
+          Defending champions Argentina lost 1-0 to Spain in the final at New York Stadium, New Jersey, United States, early
+          Monday (July 20th) WIB. La Furia Roja's only goal came from substitute Ferran Torres in the 106th minute.
+          "The pain is excruciating and it will take time for this wound to heal," Messi wrote in a post on his Instagram account.</h6>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <img class="w-100 w-auto object-fit-cover img-fluid rounded my-2" src="image/yamal.jpg" alt="">
+      </div>
+      <div class="col-md-8 d-flex border-bottom align-items-center">
+        <a href="#" class="fs-5 text-decoration-none fw-semibold text-dark text-opacity-75"> There's No More Tension Between Barcelona and Spain Over Yamal
+          <span class="text-secondary d-block mt-2 fs-6">1 jam yang lalu</span>
+          <h6 class="text-dark fs-6 fw-light">Lamine Yamal has not been called up to the Spanish national team for this week's international break. He was left out of
+          the La Furia Roja squad due to a groin injury.
+          The injury was sustained while representing the Spanish national team during last month's international break. He has
+          since missed four Barcelona matches.</h6>
+        </a>
+      </div>
+    </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img class="w-75 object-fit-cover img-fluid rounded my-3" src="image/belajar.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+          <h2 class=" fw-bold text-primary text-opacity-75 my-2 px-3 fs-3">Kegiatan Belajar di PPKD Jakarta Pusat</h2>
+          <p class="px-3 ms-auto text-start">Head of the Central Jakarta PPKD, E Suzukiana, said that this regular job training activity was carried out using
+          classroom and practical methods, with training time for each vocational area ranging from 30 to 60 working days.
+          "The shortest training period is 30 days, such as for Junior Accounting and Barista. The training is scheduled to be
+          completed by the end of March," he said on Wednesday (February 19). </p>
+        </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6 p-0 order-2 order-md-1">
+            <h2 class=" fw-bold text-primary text-opacity-75 my-3 px-3 fs-3">Kegiatan Pelatihan Fisik, Mental, Disiplin (FMD) di PPKD Jakarta Pusat</h2>
+            <p class="px-3 ms-auto text-start">The Head of the Central Jakarta PPKD, E. Suzukiana, stated that during the training process, participants participated
+            in a series of physical training sessions and classes covering national insight, fitness, and leadership. The training
+            involved personnel from the Tanah Abang District Military Command (Koramil).
+            
+            "This is an effort to prepare the physical, mental and attitude of prospective training participants before taking part
+            in the learning process," he said, Tuesday (18/2).</p>
+          </div>
+        <div class="col-md-6 d-flex justify-content-center order-1 order-md-2">
+          <img class="w-75 object-fit-cover img-fluid rounded my-3" src="image/tentara.jpg" alt="">
+        </div>
+        </div>
+        <!-- Hairline -->
+        <hr class="my-3"></hr>
+        <!-- Card -->
+        <div class="row my-3">
+          <div class="col-md-6 d-flex">
+            <div class="card">
+              <div class="card-header py-3">
+                <img class="object-fit-cover w-100 card-img-top p-3 pb-0" src="image/kopi.jpg"  height="200" alt="">
+                <div class="card-body pt-2">
+                  <h5 class="card-title text-primary fw-medium text-start my-1">Uji Kompetensi Program Barista</h5>
+                  <p>Uji kompetensi barista di Pusat Pelatihan Kerja Daerah (PPKD) adalah tahap pengujian akhir bagi peserta pelatihan untuk
+                  menguji keahlian meracik kopi dan mendapatkan sertifikasi resmi dari Lembaga Sertifikasi Profesi (LSP) serta Badan
+                  Nasional Sertifikasi Profesi (BNSP)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header py-3">
+                <img class="object-fit-cover w-100 card-img-top p-3 pb-0" src="image/latih.jpg" height="200" alt="">
+                <div class="card-body pt-2">
+                  <h5 class="card-title text-primary fw-medium text-start my-1">Uji Kompetensi Program Barista</h5>
+                  <p>Uji kompetensi barista di Pusat Pelatihan Kerja Daerah (PPKD) adalah tahap pengujian akhir bagi peserta
+                    pelatihan untukmenguji keahlian meracik kopi dan mendapatkan sertifikasi resmi dari Lembaga Sertifikasi
+                    Profesi (LSP) serta Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-md-6 d-flex">
+            <div class="card">
+              <div class="card-header py-3">
+                <img class="object-fit-cover w-100 card-img-top p-3 pb-0" src="image/kopi.jpg" height="200" alt="">
+                <div class="card-body pt-2">
+                  <h5 class="card-title text-primary fw-medium text-start my-1">Uji Kompetensi Program Barista</h5>
+                  <p>Uji kompetensi barista di Pusat Pelatihan Kerja Daerah (PPKD) adalah tahap pengujian akhir bagi peserta
+                    pelatihan untuk
+                    menguji keahlian meracik kopi dan mendapatkan sertifikasi resmi dari Lembaga Sertifikasi Profesi (LSP) serta
+                    Badan
+                    Nasional Sertifikasi Profesi (BNSP)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header py-3">
+                <img class="object-fit-cover w-100 card-img-top p-3 pb-0" src="image/kopi.jpg" height="200" alt="">
+                <div class="card-body pt-2">
+                  <h5 class="card-title text-primary fw-medium text-start my-1">Uji Kompetensi Program Barista</h5>
+                  <p>Uji kompetensi barista di Pusat Pelatihan Kerja Daerah (PPKD) adalah tahap pengujian akhir bagi peserta
+                    pelatihan untukmenguji keahlian meracik kopi dan mendapatkan sertifikasi resmi dari Lembaga Sertifikasi
+                    Profesi (LSP) serta Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <footer class="bg-primary rounded">
+          <p class=" text-light text-center py-3">&copy; Copyright By Fransiskus Sembiring 2026</p>
+        </footer>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
